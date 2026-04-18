@@ -1,0 +1,251 @@
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa6";
+
+import { Button } from "@/components/ui/button";
+
+interface OrderStep {
+  number: string;
+  title: string;
+  description: string;
+  duration: string;
+  details: string[];
+}
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+const orderSteps: OrderStep[] = [
+  {
+    number: "1",
+    title: "💬 Konsultasi",
+    description:
+      "Chat admin via WhatsApp, kirim foto sepatu yang ingin dibersihkan.",
+    duration: "5-10 menit",
+    details: [
+      "Siapkan foto sepatu dari berbagai sudut",
+      "Ceritakan masalah sepatu (noda, kotor, kusam)",
+      "Admin akan memberikan rekomendasi terbaik",
+    ],
+  },
+  {
+    number: "2",
+    title: "🚚 Pick Up",
+    description: "Kurir profesional kami akan menjemput sepatu ke lokasi Anda.",
+    duration: "Tergantung lokasi (max 24 jam)",
+    details: [
+      "Gratis ongkir untuk area tertentu",
+      "Sepatu dikemas dengan aman",
+      "Kembalian uang jika tidak puas dengan hasil",
+    ],
+  },
+  {
+    number: "3",
+    title: "🫧 Cleaning Process",
+    description: "Sepatu dicuci dengan treatment premium dan material terbaik.",
+    duration: "2-4 hari kerja",
+    details: [
+      "Pembersihan presisi hingga sela-sela",
+      "Treatment khusus sesuai material",
+      "Update foto progress via WhatsApp",
+    ],
+  },
+  {
+    number: "4",
+    title: "📦 Delivery & Payment",
+    description: "Sepatu diantar kembali fresh dan siap pakai.",
+    duration: "Hari yang dijanjikan",
+    details: [
+      "Garansi hasil atau uang kembali 100%",
+      "Metode pembayaran: Cash/Transfer/E-wallet",
+      "Bonus care kit untuk setiap pembelian",
+    ],
+  },
+];
+
+const faqs: FAQ[] = [
+  {
+    question: "Berapa response time admin?",
+    answer:
+      "Admin kami siap 24/7. Respons pertama dijamin dalam 1 jam, bahkan di malam hari.",
+  },
+  {
+    question: "Apakah ada garansi hasil?",
+    answer:
+      "Ya! Kami memberikan garansi kepuasan 100% atau uang kembali. Tidak ada risiko sama sekali.",
+  },
+  {
+    question: "Apakah di semua area atau hanya area tertentu?",
+    answer:
+      "Kami melayani Jakarta dan sekitarnya. Tanyakan ke admin apakah area Anda tercover.",
+  },
+  {
+    question: "Sepatu yang jenis apa saja bisa dibersihkan?",
+    answer:
+      "Semua jenis sepatu bisa dibersihkan: Sneaker, formal, olahraga, canvas, leather, suede, dll.",
+  },
+];
+
+export default function HowToOrderSection() {
+  return (
+    <section
+      id="order"
+      className="relative overflow-hidden bg-gradient-to-b from-[#001F16] to-[#001F16]/0 px-3 py-16 sm:px-6 sm:py-20 md:px-10 md:py-24"
+    >
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-32 top-10 h-48 w-48 rounded-full bg-[#0f8d72]/20 blur-3xl sm:top-16 sm:h-64 sm:w-64" />
+        <div className="absolute -right-24 bottom-0 h-56 w-56 rounded-full bg-[#E3EF26]/15 blur-3xl sm:h-72 sm:w-72" />
+      </div>
+
+      <div className="relative mx-auto w-full max-w-5xl px-0">
+        {/* Header */}
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="mb-2 text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#c6ff00] sm:mb-3 sm:text-xs sm:tracking-[0.26em]">
+            SIMPLE & FAST
+          </p>
+          <h2 className="text-2xl font-black uppercase tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
+            HOW TO ORDER?
+          </h2>
+          <p className="mt-3 text-xs text-[#d6e8e3] sm:mt-4 sm:text-sm md:text-base">
+            ⚡ Proses cepat, mudah, dan terjamin hasilnya. Mulai dari konsultasi
+            hingga sepatu sampai tangan Anda.
+          </p>
+        </div>
+
+        {/* Trust Signals Bar */}
+        <div className="mt-6 flex flex-col gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-4 backdrop-blur sm:mt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-0 sm:p-6 md:rounded-xl md:gap-8 md:p-8">
+          <div className="flex-1 text-center sm:flex-none">
+            <p className="text-xs font-extrabold text-[#c6ff00] sm:text-sm">
+              Respons 1 Jam
+            </p>
+            <p className="text-[10px] text-gray-400 sm:text-xs">24/7 Support</p>
+          </div>
+          <div className="hidden h-px w-px bg-white/20 sm:block" />
+          <div className="flex-1 text-center sm:flex-none">
+            <p className="text-xs font-extrabold text-[#c6ff00] sm:text-sm">
+              Garansi 100%
+            </p>
+            <p className="text-[10px] text-gray-400 sm:text-xs">Uang Kembali</p>
+          </div>
+          <div className="hidden h-px w-px bg-white/20 sm:block" />
+          <div className="flex-1 text-center sm:flex-none">
+            <p className="text-xs font-extrabold text-[#c6ff00] sm:text-sm">
+              Gratis Ongkir
+            </p>
+            <p className="text-[10px] text-gray-400 sm:text-xs">
+              Area Tertentu
+            </p>
+          </div>
+        </div>
+
+        {/* Timeline Container */}
+        <div className="relative mt-12 sm:mt-16 md:mt-20">
+          {/* Center Line - Hide on mobile, show on tablet+ */}
+          <div className="absolute left-1/2 top-0 bottom-0 hidden w-1 -translate-x-1/2 bg-gradient-to-b from-[#c6ff00] via-[#0f8d72] to-[#c6ff00] opacity-40 md:block" />
+
+          {/* Steps Timeline */}
+          <div className="space-y-8 sm:space-y-12 md:space-y-16">
+            {orderSteps.map((step, idx) => {
+              const isLeft = idx % 2 === 0;
+
+              return (
+                <div
+                  key={step.number}
+                  className={`flex ${isLeft ? "md:flex-row" : "md:flex-row-reverse"} flex-col items-center gap-3 sm:gap-4 md:gap-8`}
+                >
+                  {/* Card */}
+                  <div className="w-full md:w-[calc(50%-1rem)]">
+                    <article className="group relative isolate overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] p-4 backdrop-blur-[1px] transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.08] sm:rounded-xl sm:p-5 md:p-6">
+                      <span className="pointer-events-none absolute -bottom-6 -right-2 z-0 text-[70px] font-black leading-none text-white/10 sm:text-[80px] md:text-[90px]">
+                        {step.number}
+                      </span>
+
+                      <div className="relative z-10">
+                        <div className="mb-2 flex flex-col gap-2 sm:mb-3 sm:flex-row sm:items-start sm:justify-between">
+                          <h3 className="text-base font-extrabold text-white sm:text-lg md:text-xl">
+                            {step.title}
+                          </h3>
+                          <span className="inline-block w-fit rounded-full bg-[#c6ff00]/20 px-2 py-0.5 text-[10px] font-bold text-[#c6ff00] sm:px-3 sm:py-1 sm:text-xs md:text-xs">
+                            {step.duration}
+                          </span>
+                        </div>
+                        <p className="mb-3 text-xs leading-6 text-[#d6e8e3] sm:mb-4 sm:text-sm md:text-base md:leading-7">
+                          {step.description}
+                        </p>
+                        <ul className="space-y-1.5 text-[11px] text-gray-400 sm:space-y-2 sm:text-xs md:text-sm">
+                          {step.details.map((detail, i) => (
+                            <li key={i} className="flex gap-2">
+                              <span className="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#c6ff00]" />
+                              <span>{detail}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+
+                  {/* Center Circle - Hide on mobile, show on tablet+ */}
+                  <div className="relative hidden h-12 w-12 shrink-0 items-center justify-center md:order-2 md:flex">
+                    <div className="absolute inset-0 animate-pulse rounded-full bg-[#c6ff00]/20" />
+                    <div className="relative z-10 h-8 w-8 rounded-full border-2 border-[#c6ff00] bg-[#001F16]" />
+                  </div>
+
+                  {/* Mobile Step Indicator */}
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#c6ff00] bg-[#001F16] md:hidden">
+                    <span className="text-xs font-extrabold text-[#c6ff00]">
+                      {step.number}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="mt-12 flex justify-center sm:mt-16 md:mt-20">
+          <Button
+            asChild
+            className="h-12 rounded-lg bg-[#25D366] px-6 text-sm font-extrabold text-[#052016] shadow-[0_10px_35px_rgba(37,211,102,0.35)] transition-all duration-300 hover:bg-[#1fbd5a] hover:shadow-[0_12px_38px_rgba(37,211,102,0.42)] hover:scale-105 sm:h-14 sm:rounded-xl sm:px-8 sm:text-base"
+          >
+            <Link
+              href="https://wa.me/6281234567890?text=Halo%20admin%2C%20saya%20mau%20order%20cleaning%20sepatu."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <FaWhatsapp className="h-5 w-5" />
+              <span className="hidden sm:inline">
+                Chat Admin via WhatsApp Sekarang
+              </span>
+              <span className="sm:hidden">Chat WhatsApp</span>
+            </Link>
+          </Button>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-16 sm:mt-20 md:mt-24">
+          <h3 className="mb-6 text-center text-xl font-black uppercase text-white sm:mb-8 sm:text-2xl md:text-3xl">
+            Pertanyaan Umum
+          </h3>
+          <div className="grid gap-3 sm:gap-4 md:gap-6 lg:grid-cols-2">
+            {faqs.map((faq, idx) => (
+              <div
+                key={idx}
+                className="rounded-lg border border-white/10 bg-white/[0.04] p-4 backdrop-blur-[1px] transition-all hover:border-white/20 hover:bg-white/[0.06] sm:p-5 md:p-6"
+              >
+                <h4 className="mb-2 text-sm font-extrabold text-white sm:mb-3 sm:text-base md:text-lg">
+                  ❓ {faq.question}
+                </h4>
+                <p className="text-xs leading-5 text-[#d6e8e3] sm:text-sm sm:leading-6 md:text-base">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
