@@ -54,7 +54,7 @@ export default function HeroSection() {
           <div className="mt-8 flex justify-center">
             <Button asChild size="lg" className="group">
               <Link href="#service">
-                Order Now <a>↗</a>
+                Order Now <span aria-hidden="true">↗</span>
               </Link>
             </Button>
           </div>

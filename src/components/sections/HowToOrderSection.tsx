@@ -19,7 +19,7 @@ interface FAQ {
 const orderSteps: OrderStep[] = [
   {
     number: "1",
-    title: "💬 Konsultasi",
+    title: "Konsultasi",
     description:
       "Chat admin via WhatsApp, kirim foto sepatu yang ingin dibersihkan.",
     duration: "5-10 menit",
@@ -31,7 +31,7 @@ const orderSteps: OrderStep[] = [
   },
   {
     number: "2",
-    title: "🚚 Pick Up",
+    title: "Pick Up",
     description: "Kurir profesional kami akan menjemput sepatu ke lokasi Anda.",
     duration: "Tergantung lokasi (max 24 jam)",
     details: [
@@ -42,7 +42,7 @@ const orderSteps: OrderStep[] = [
   },
   {
     number: "3",
-    title: "🫧 Cleaning Process",
+    title: "Cleaning Process",
     description: "Sepatu dicuci dengan treatment premium dan material terbaik.",
     duration: "2-4 hari kerja",
     details: [
@@ -53,7 +53,7 @@ const orderSteps: OrderStep[] = [
   },
   {
     number: "4",
-    title: "📦 Delivery & Payment",
+    title: "Delivery & Payment",
     description: "Sepatu diantar kembali fresh dan siap pakai.",
     duration: "Hari yang dijanjikan",
     details: [
@@ -108,7 +108,7 @@ export default function HowToOrderSection() {
             HOW TO ORDER?
           </h2>
           <p className="mt-3 text-xs text-[#d6e8e3] sm:mt-4 sm:text-sm md:text-base">
-            ⚡ Proses cepat, mudah, dan terjamin hasilnya. Mulai dari konsultasi
+            Proses cepat, mudah, dan terjamin hasilnya. Mulai dari konsultasi
             hingga sepatu sampai tangan Anda.
           </p>
         </div>
@@ -116,24 +116,24 @@ export default function HowToOrderSection() {
         {/* Trust Signals Bar */}
         <div className="mt-6 flex flex-col gap-3 rounded-lg border border-white/10 bg-white/[0.03] p-4 backdrop-blur sm:mt-8 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-0 sm:p-6 md:rounded-xl md:gap-8 md:p-8">
           <div className="flex-1 text-center sm:flex-none">
-            <p className="text-xs font-extrabold text-[#c6ff00] sm:text-sm">
+            <p className="text-xs font-extrabold text-white sm:text-sm">
               Respons 1 Jam
             </p>
-            <p className="text-[10px] text-gray-400 sm:text-xs">24/7 Support</p>
+            <p className="text-[10px] text-white/80 sm:text-xs">24/7 Support</p>
           </div>
           <div className="hidden h-px w-px bg-white/20 sm:block" />
           <div className="flex-1 text-center sm:flex-none">
-            <p className="text-xs font-extrabold text-[#c6ff00] sm:text-sm">
+            <p className="text-xs font-extrabold text-white sm:text-sm">
               Garansi 100%
             </p>
-            <p className="text-[10px] text-gray-400 sm:text-xs">Uang Kembali</p>
+            <p className="text-[10px] text-white/80 sm:text-xs">Uang Kembali</p>
           </div>
           <div className="hidden h-px w-px bg-white/20 sm:block" />
           <div className="flex-1 text-center sm:flex-none">
-            <p className="text-xs font-extrabold text-[#c6ff00] sm:text-sm">
+            <p className="text-xs font-extrabold text-white sm:text-sm">
               Gratis Ongkir
             </p>
-            <p className="text-[10px] text-gray-400 sm:text-xs">
+            <p className="text-[10px] text-white/80 sm:text-xs">
               Area Tertentu
             </p>
           </div>
@@ -158,10 +158,6 @@ export default function HowToOrderSection() {
                   {/* Card */}
                   <div className="w-full md:w-[calc(50%-1rem)]">
                     <article className="group relative isolate overflow-hidden rounded-xl border border-white/10 bg-gradient-to-b from-white/[0.08] to-white/[0.03] p-5 backdrop-blur-[2px] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#c6ff00]/40 hover:shadow-[0_22px_40px_rgba(0,0,0,0.28)] sm:p-6 md:rounded-2xl md:p-7">
-                      <span className="pointer-events-none absolute bottom-2 right-4 z-0 select-none text-[78px] font-extrabold leading-none tracking-[-0.04em] text-[#c6ff00]/18 sm:bottom-3 sm:right-5 sm:text-[96px] md:bottom-3 md:right-6 md:text-[110px]">
-                        {stepNumber}
-                      </span>
-
                       <div className="relative z-10">
                         <div className="mb-2 flex flex-col gap-2 sm:mb-3 sm:flex-row sm:items-start sm:justify-between">
                           <h3 className="text-base font-extrabold text-white sm:text-lg md:text-xl">
