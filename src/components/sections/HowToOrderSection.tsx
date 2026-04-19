@@ -142,23 +142,24 @@ export default function HowToOrderSection() {
         {/* Timeline Container */}
         <div className="relative mt-12 sm:mt-16 md:mt-20">
           {/* Center Line - Hide on mobile, show on tablet+ */}
-          <div className="absolute left-1/2 top-0 bottom-0 hidden w-1 -translate-x-1/2 bg-gradient-to-b from-[#c6ff00] via-[#0f8d72] to-[#c6ff00] opacity-40 md:block" />
+          <div className="absolute bottom-0 left-1/2 top-0 hidden w-1 -translate-x-1/2 rounded-full bg-gradient-to-b from-[#c6ff00] via-[#0f8d72] to-[#c6ff00] opacity-45 md:block" />
 
           {/* Steps Timeline */}
           <div className="space-y-8 sm:space-y-12 md:space-y-16">
             {orderSteps.map((step, idx) => {
               const isLeft = idx % 2 === 0;
+              const stepNumber = String(Number(step.number)).padStart(2, "0");
 
               return (
                 <div
                   key={step.number}
-                  className={`flex ${isLeft ? "md:flex-row" : "md:flex-row-reverse"} flex-col items-center gap-3 sm:gap-4 md:gap-8`}
+                  className={`flex ${isLeft ? "md:flex-row" : "md:flex-row-reverse"} flex-col items-center gap-4 sm:gap-5 md:gap-8`}
                 >
                   {/* Card */}
                   <div className="w-full md:w-[calc(50%-1rem)]">
-                    <article className="group relative isolate overflow-hidden rounded-lg border border-white/10 bg-white/[0.04] p-4 backdrop-blur-[1px] transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.08] sm:rounded-xl sm:p-5 md:p-6">
-                      <span className="pointer-events-none absolute -bottom-6 -right-2 z-0 text-[70px] font-black leading-none text-white/10 sm:text-[80px] md:text-[90px]">
-                        {step.number}
+                    <article className="group relative isolate overflow-hidden rounded-xl border border-white/10 bg-gradient-to-b from-white/[0.08] to-white/[0.03] p-5 backdrop-blur-[2px] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#c6ff00]/40 hover:shadow-[0_22px_40px_rgba(0,0,0,0.28)] sm:p-6 md:rounded-2xl md:p-7">
+                      <span className="pointer-events-none absolute bottom-2 right-4 z-0 select-none text-[78px] font-extrabold leading-none tracking-[-0.04em] text-[#c6ff00]/18 sm:bottom-3 sm:right-5 sm:text-[96px] md:bottom-3 md:right-6 md:text-[110px]">
+                        {stepNumber}
                       </span>
 
                       <div className="relative z-10">
@@ -166,17 +167,19 @@ export default function HowToOrderSection() {
                           <h3 className="text-base font-extrabold text-white sm:text-lg md:text-xl">
                             {step.title}
                           </h3>
-                          <span className="inline-block w-fit rounded-full bg-[#c6ff00]/20 px-2 py-0.5 text-[10px] font-bold text-[#c6ff00] sm:px-3 sm:py-1 sm:text-xs md:text-xs">
+                          <span className="inline-block w-fit rounded-full border border-[#c6ff00]/25 bg-[#c6ff00]/15 px-2 py-0.5 text-[10px] font-bold text-[#e8ffad] sm:px-3 sm:py-1 sm:text-xs md:text-xs">
                             {step.duration}
                           </span>
                         </div>
                         <p className="mb-3 text-xs leading-6 text-[#d6e8e3] sm:mb-4 sm:text-sm md:text-base md:leading-7">
                           {step.description}
                         </p>
-                        <ul className="space-y-1.5 text-[11px] text-gray-400 sm:space-y-2 sm:text-xs md:text-sm">
+                        <ul className="space-y-1.5 text-[11px] text-gray-300 sm:space-y-2 sm:text-xs md:text-sm">
                           {step.details.map((detail, i) => (
                             <li key={i} className="flex gap-2">
-                              <span className="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#c6ff00]" />
+                              <span className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-[#c6ff00]/40 bg-[#c6ff00]/15 text-[10px] text-[#d8ff52]">
+                                ✓
+                              </span>
                               <span>{detail}</span>
                             </li>
                           ))}
@@ -186,16 +189,11 @@ export default function HowToOrderSection() {
                   </div>
 
                   {/* Center Circle - Hide on mobile, show on tablet+ */}
-                  <div className="relative hidden h-12 w-12 shrink-0 items-center justify-center md:order-2 md:flex">
-                    <div className="absolute inset-0 animate-pulse rounded-full bg-[#c6ff00]/20" />
-                    <div className="relative z-10 h-8 w-8 rounded-full border-2 border-[#c6ff00] bg-[#001F16]" />
-                  </div>
-
-                  {/* Mobile Step Indicator */}
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#c6ff00] bg-[#001F16] md:hidden">
-                    <span className="text-xs font-extrabold text-[#c6ff00]">
-                      {step.number}
-                    </span>
+                  <div className="relative hidden h-14 w-14 shrink-0 items-center justify-center md:order-2 md:flex">
+                    <div className="absolute inset-0 rounded-full bg-[#c6ff00]/25 blur-[1px]" />
+                    <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#c6ff00] bg-[#001F16] text-[11px] font-black text-[#d8ff52]">
+                      {stepNumber}
+                    </div>
                   </div>
                 </div>
               );

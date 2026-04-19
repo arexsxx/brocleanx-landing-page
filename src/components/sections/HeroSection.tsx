@@ -7,42 +7,28 @@ export default function HeroSection() {
   return (
     <section className="relative isolate min-h-screen overflow-hidden bg-[#030F0F]">
       {/* Background split tetap aman walau gambar remote gagal */}
-      <div className="absolute inset-0 grid grid-cols-1 md:grid-cols-2">
+      <div className="absolute inset-0 grid grid-cols-1 gap-4 p-4 pt-[8.5rem] md:grid-cols-2 md:gap-8 md:p-8 md:pt-[9.25rem]">
         <div
-          className="relative min-h-[420px] bg-cover bg-center"
+          className="relative min-h-[320px] overflow-hidden rounded-lg bg-cover bg-center md:min-h-[420px]"
           style={{
             backgroundColor: "#001F16",
             backgroundImage:
-              "linear-gradient(135deg, rgba(2, 20, 15, 0.15), rgba(17, 185, 129, 0.25)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop')",
+              "linear-gradient(140deg, rgba(3, 15, 12, 0.25), rgba(4, 28, 22, 0.55)), url('/assets/left-hero.jpg')",
+            backgroundPosition: "center 38%",
           }}
         >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.12),_transparent_38%)]" />
-          <div className="absolute bottom-6 left-6 right-6 rounded-lg border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-sm">
-            <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-[#c6ff00]">
-              Left panel
-            </p>
-            <p className="mt-1 text-sm text-white/85">
-              Suede, mesh, and daily wear pieces.
-            </p>
-          </div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.1),_transparent_42%)]" />
         </div>
         <div
-          className="relative min-h-[420px] bg-cover bg-center"
+          className="relative min-h-[320px] overflow-hidden rounded-lg bg-cover bg-center md:min-h-[420px]"
           style={{
             backgroundColor: "#00110C",
             backgroundImage:
-              "linear-gradient(135deg, rgba(2, 20, 15, 0.1), rgba(184, 255, 61, 0.18)), url('https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1200&auto=format&fit=crop')",
+              "linear-gradient(145deg, rgba(3, 15, 12, 0.2), rgba(8, 30, 20, 0.52)), url('/assets/right-hero.jpg')",
+            backgroundPosition: "center 35%",
           }}
         >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.12),_transparent_40%)]" />
-          <div className="absolute bottom-6 left-6 right-6 rounded-lg border border-white/10 bg-black/35 px-4 py-3 backdrop-blur-sm">
-            <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-[#c6ff00]">
-              Right panel
-            </p>
-            <p className="mt-1 text-sm text-white/85">
-              Premium whites, leather, and detail work.
-            </p>
-          </div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.1),_transparent_44%)]" />
         </div>
       </div>
 
@@ -61,28 +47,14 @@ export default function HeroSection() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-gray-100/90 sm:text-base md:text-lg">
-            Cuci sepatu yang rapi, aman untuk material premium, dan hasil akhir
-            yang tetap terlihat bersih tanpa tampilan berlebihan.
+            Dapatkan hasil bersih natural yang mengembalikan tampilan asli
+            sepatu kesayangan Anda.
           </p>
 
           <div className="mt-8 flex justify-center">
             <Button asChild size="lg" className="group">
               <Link href="#service">
-                Order Now
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={3}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
+                Order Now <a>↗</a>
               </Link>
             </Button>
           </div>
