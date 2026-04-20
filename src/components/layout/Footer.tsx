@@ -27,9 +27,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs leading-relaxed text-gray-400 max-w-xs">
-              Kami adalah premium shoe care yang berdedikasi mengembalikan
-              kondisi sepatu kesayangan Anda menjadi bersih dan fresh seperti
-              baru, dengan layanan antar-jemput yang mudah.
+              Kami mencuci sepatu kesayangan Anda menjadi bersih seperti baru
+              melalui layanan antar-jemput praktis.
             </p>
           </div>
 
@@ -69,17 +68,17 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-2 tracking-wider">
               CONTACT US
             </h4>
-            <div className="border-b border-gray-800 pb-2">
+            {/* <div className="border-b border-gray-800 pb-2">
               Find us on maps ( Brocleanx )
-            </div>
+            </div> */}
             <div className="border-b border-gray-800 pb-2">
-              Email : hello.brocleanx@gmail.com
+              Email : brocleanx@gmail.com
             </div>
             <div className="border-b border-gray-800 pb-2">
               Instagram : @brocleanx
             </div>
             <div className="border-b border-gray-800 pb-2">
-              Facebook : brocleanx.care
+              Whatsapp : +62 896 1372 9647
             </div>
           </div>
 
@@ -101,13 +100,13 @@ export default function Footer() {
               Documentations
             </Link>
             <Link
-              href="#"
+              href="/how-to-order"
               className="hover:text-white transition-colors border-b border-gray-800 pb-2"
             >
               How to Buy
             </Link>
             <Link
-              href="#"
+              href=""
               className="hover:text-white transition-colors border-b border-gray-800 pb-2"
             >
               Terms Of Policy
@@ -115,7 +114,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Social Icons */}
+        {/* media sosial */}
         <div className="flex flex-wrap gap-3 border-t border-[#0a2e22] pt-8">
           <Link
             href="https://instagram.com/brocleanx"
@@ -125,21 +124,21 @@ export default function Footer() {
             <FaInstagram className="h-4 w-4" />
           </Link>
           <Link
-            href="https://facebook.com/brocleanx.care"
+            href=""
             aria-label="Facebook"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-white/10 text-white transition-colors hover:bg-white hover:text-[#001F16]"
           >
             <FaFacebookF className="h-4 w-4" />
           </Link>
-          <Link
+          {/* <Link
             href="https://youtube.com"
             aria-label="YouTube"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-white/10 text-white transition-colors hover:bg-white hover:text-[#001F16]"
           >
             <FaYoutube className="h-4 w-4" />
-          </Link>
+          </Link> */}
           <Link
-            href="https://x.com"
+            href=""
             aria-label="X (Twitter)"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-white/10 text-white transition-colors hover:bg-white hover:text-[#001F16]"
           >
