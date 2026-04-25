@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-[#0a2e22] bg-[#001F16] px-4 pb-8 pt-14 text-sm text-gray-300 md:px-8 md:pt-16">
+    <footer className="w-full border-t border-[#0a2e22] bg-[#001F16] px-6 pb-8 pt-14 text-sm text-gray-300 sm:px-8 md:px-12 md:pt-16">
       <div className="container mx-auto max-w-6xl">
         <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-4 lg:gap-12">
           {/* Kolom 1: Logo & Deskripsi */}

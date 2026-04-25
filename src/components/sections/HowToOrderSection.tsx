@@ -91,7 +91,7 @@ export default function HowToOrderSection() {
   return (
     <section
       id="order"
-      className="relative overflow-hidden bg-gradient-to-b from-[#001F16] to-[#001F16]/0 px-3 py-16 sm:px-6 sm:py-20 md:px-10 md:py-24"
+      className="relative overflow-hidden bg-gradient-to-b from-[#001F16] to-[#001F16]/0 px-6 py-16 sm:px-8 sm:py-20 md:px-12 md:py-24"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-32 top-10 h-48 w-48 rounded-full bg-[#0f8d72]/20 blur-3xl sm:top-16 sm:h-64 sm:w-64" />

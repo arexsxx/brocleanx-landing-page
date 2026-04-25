@@ -37,7 +37,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#030F0F]/10 via-[#030F0F]/5 to-[#030F0F]/90" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.1)_62%,_rgba(0,0,0,0.4)_100%)]" />
 
-      <div className="relative mx-auto box-border flex min-h-screen max-w-6xl items-center justify-center px-4 pb-14 pt-[9.5rem] text-center sm:pt-[10rem] md:px-8 md:pt-[8.25rem] lg:pb-16">
+      <div className="relative mx-auto box-border flex min-h-screen max-w-6xl items-center justify-center px-6 pb-14 pt-[9.5rem] text-center sm:px-8 sm:pt-[10rem] md:px-12 md:pt-[8.25rem] lg:pb-16">
         <div className="max-w-4xl">
           <Badge className="mb-5">Premium sneaker care</Badge>
 

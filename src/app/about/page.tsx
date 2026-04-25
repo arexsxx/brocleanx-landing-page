@@ -19,7 +19,7 @@ export default function AboutPage() {
   return (
     <div className="bg-[#001F16] min-h-screen pt-24 pb-12">
       {/* Hero / Intro Section */}
-      <section className="relative px-4 py-16 sm:px-6 lg:px-8">
+      <section className="relative px-6 py-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
             <div className="flex flex-col gap-6">
@@ -55,7 +55,7 @@ export default function AboutPage() {
 
       {/* Stats Section */}
       <section className="py-12 border-y border-white/10 bg-black/20 mt-8">
-        <div className="mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1320px] px-6 sm:px-8 lg:px-12">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-3 lg:gap-x-12">
             {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col-reverse gap-y-2 items-center text-center">
@@ -68,7 +68,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="relative px-4 py-20 sm:px-6 lg:px-8 mt-12">
+      <section className="relative px-6 py-20 sm:px-8 lg:px-12 mt-12">
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-12 lg:grid-cols-12 items-center">
             <div className="lg:col-span-5 relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-[#ffde00]/20 order-2 lg:order-1 group">

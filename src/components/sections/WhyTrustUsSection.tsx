@@ -43,7 +43,7 @@ export default function WhyTrustUsSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#001F16] px-2 py-20 sm:px-3 md:px-4"
+      className="relative overflow-hidden bg-[#001F16] px-6 py-20 sm:px-8 md:px-12"
     >
       <div className="mx-auto max-w-[1320px]">
         <div className="grid gap-4 lg:grid-cols-12 lg:grid-rows-[auto_1fr] lg:gap-6">

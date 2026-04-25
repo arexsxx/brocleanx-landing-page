@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CtaDeliverySection() {
   return (
-    <section className="flex w-full justify-center bg-[#030F0F] px-4 py-20 md:px-8 md:py-32">
+    <section className="flex w-full justify-center bg-[#030F0F] px-6 py-20 sm:px-8 md:px-12 md:py-32">
       <div className="container max-w-6xl relative flex items-center">
         <div className="relative w-full rounded-xl overflow-hidden shadow-2xl min-h-[380px] md:min-h-[420px] flex items-center z-10 bg-[#001F16]">
           <div className="absolute inset-0">

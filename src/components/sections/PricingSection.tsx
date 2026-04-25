@@ -48,7 +48,7 @@ export default function PricingSection() {
         </div>
       </div>
 
-      <div className="relative w-full px-4 py-14 sm:px-6 md:flex md:w-[70%] md:flex-col md:justify-center md:px-16 md:py-24">
+      <div className="relative w-full px-6 py-14 sm:px-8 md:flex md:w-[70%] md:flex-col md:justify-center md:px-16 md:py-24">
         <div className="absolute -left-14 bottom-24 z-0 hidden rotate-[-28deg] opacity-55 blur-[0.5px] md:block">
           <Image
             src="/assets/sikat.png"

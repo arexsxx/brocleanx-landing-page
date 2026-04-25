@@ -207,7 +207,7 @@ export default function Navbar() {
             : "top-9 w-full border-b border-[#0a2e22] bg-[#030F0F]/90"
         }`}
       >
-        <div className="relative mx-auto flex h-16 max-w-6xl items-center px-4 sm:h-20 sm:px-6 md:h-24 md:px-8">
+        <div className="relative mx-auto flex h-16 max-w-6xl items-center px-6 sm:h-20 sm:px-8 md:h-24 md:px-10">
           <nav className="hidden items-center gap-8 text-sm font-medium text-gray-300 md:flex">
             {pathname !== "/" && (
               <Link href="/" className="transition-colors hover:text-white">
@@ -292,7 +292,7 @@ export default function Navbar() {
                 </button>
 
                 {isSearchOpen ? (
-                  <div className="absolute right-0 top-12 z-[90] w-[min(85vw,360px)] overflow-hidden rounded-xl border border-white/10 bg-[#071512] shadow-[0_24px_60px_rgba(0,0,0,0.55)]">
+                  <div className="absolute right-[-88px] sm:-right-8 md:right-0 top-12 z-[90] w-[calc(100vw-3rem)] max-w-[400px] sm:w-[440px] md:w-[480px] overflow-hidden rounded-xl border border-white/10 bg-[#071512] shadow-[0_24px_60px_rgba(0,0,0,0.55)]">
                     <div className="flex items-center border-b border-white/10 px-3 py-2.5">
                       <svg
                         viewBox="0 0 24 24"
