@@ -227,7 +227,7 @@ export default function Navbar() {
 
           <Link
             href="/"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
           >
             <Image
               src="/assets/logo2.png"
@@ -245,7 +245,7 @@ export default function Navbar() {
               aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 md:hidden"
+              className="order-last md:order-none inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 md:hidden"
             >
               {isMobileMenuOpen ? (
                 <svg
@@ -270,7 +270,7 @@ export default function Navbar() {
               )}
             </button>
 
-            <div className="hidden items-center gap-2 md:flex">
+            <div className="flex items-center gap-2">
               <div className="relative" ref={searchContainerRef}>
                 <button
                   type="button"
