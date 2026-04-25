@@ -28,7 +28,7 @@ export default function Footer() {
             </div>
             <p className="text-xs leading-relaxed text-gray-400 max-w-xs">
               Kami mencuci sepatu kesayangan Anda menjadi bersih seperti baru
-              melalui layanan antar-jemput praktis.
+              dengan proses yang praktis dan profesional.
             </p>
           </div>
 

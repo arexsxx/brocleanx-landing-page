@@ -36,7 +36,7 @@ const featureCards: FeatureCard[] = [
 const hasslePickup = {
   bgImage: "url('/assets/card-1.jpg')",
   iconSrc: "/assets/pickup.svg",
-  iconAlt: "Hassle free pickup icon",
+  iconAlt: "Easy drop-off icon",
 };
 
 export default function WhyTrustUsSection() {
@@ -111,7 +111,7 @@ export default function WhyTrustUsSection() {
 
               <div className="relative z-10 w-full rounded-lg bg-white/45 px-3 py-2 text-left backdrop-blur-[1px]">
                 <CardTitle className="text-xl font-extrabold uppercase leading-tight tracking-tight text-black sm:text-2xl md:text-[1.8rem]">
-                  / HASSLE - FREE PICKUP
+                  / EASY DROP - OFF
                 </CardTitle>
               </div>
 
@@ -127,7 +127,7 @@ export default function WhyTrustUsSection() {
 
               <div className="relative z-10 flex flex-col items-center text-center mt-auto">
                 <CardDescription className="mb-6 max-w-[260px] rounded-lg bg-white/45 px-4 py-3 text-base font-semibold leading-7 text-gray-800 backdrop-blur-[1px] md:text-[1.2rem]">
-                  Cukup chat WA, kami yang jemput dan antar sepatumu fresh.
+                  Cukup chat WA, bawa sepatu Anda ke outlet kami, dan kami siap memprosesnya.
                 </CardDescription>
                 <Button asChild>
                   <Link href="/how-to-order">Order sekarang</Link>
@@ -139,7 +139,7 @@ export default function WhyTrustUsSection() {
       </div>
 
       <div className="mt-10 border-y border-white/10 bg-black/15 sm:mt-14">
-        <Marquee message="Premium treatment • Detail-oriented cleaning • Hassle-free pickup •" />
+        <Marquee message="Premium treatment • Detail-oriented cleaning • Easy drop-off •" />
       </div>
     </section>
   );

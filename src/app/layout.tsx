@@ -12,8 +12,33 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Brocleanx | Shoe Care",
-  description: "Layanan cuci sepatu profesional dengan fasilitas antar-jemput.",
+  title: "Brocleanx | Premium Shoe Care Yogyakarta",
+  description: "Layanan cuci sepatu premium (Premium Shoe Care) profesional di Yogyakarta. Kami menawarkan pembersihan detail-oriented dengan fasilitas hassle-free pickup via WhatsApp admin.",
+  keywords: [
+    "cuci sepatu Yogyakarta",
+    "premium shoe care",
+    "laundry sepatu",
+    "Brocleanx",
+    "cuci sepatu premium",
+    "laundry sepatu jogja",
+    "shoe cleaning jogja",
+  ],
+  openGraph: {
+    title: "Brocleanx | Premium Shoe Care Yogyakarta",
+    description: "Layanan cuci sepatu premium profesional di Yogyakarta dengan fasilitas hassle-free pickup.",
+    url: "https://brocleanx.vercel.app",
+    siteName: "Brocleanx",
+    locale: "id_ID",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Brocleanx Premium Shoe Care",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

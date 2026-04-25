@@ -17,14 +17,20 @@ export default function CtaDeliverySection() {
 
           <div className="relative z-20 w-full p-6 text-center sm:p-10 md:w-[70%] md:p-16 md:text-left">
             <h2 className="mb-4 text-3xl font-bold leading-[1.2] tracking-tight text-white md:text-4xl lg:text-[42px]">
-              Kamu malas <br className="hidden sm:block" /> datang ke outlet?
+              Sepatu kesayangan <br className="hidden sm:block" /> butuh perawatan?
             </h2>
             <p className="mb-8 text-sm font-medium text-gray-200 md:text-base">
-              Minta antar jemput sama kita aja !
+              Segera konsultasikan dengan admin kami !
             </p>
             <div className="flex justify-center md:justify-start">
               <Button asChild>
-                <Link href="#pickup">Jadwalkan antar jemput</Link>
+                <Link
+                  href="https://wa.me/6289613729647?text=Halo%20admin%2C%20saya%20mau%20order%20cleaning%20sepatu."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chat Admin Sekarang
+                </Link>
               </Button>
             </div>
           </div>

@@ -8,6 +8,8 @@ interface IconLinkProps {
   label: string;
   children: ReactNode;
   className?: string;
+  target?: string;
+  rel?: string;
 }
 
 export default function IconLink({
@@ -15,12 +17,16 @@ export default function IconLink({
   label,
   children,
   className,
+  target,
+  rel,
 }: IconLinkProps) {
   return (
     <Link
       href={href}
       aria-label={label}
       title={label}
+      target={target}
+      rel={rel}
       className={cn(
         "inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10",
         className,

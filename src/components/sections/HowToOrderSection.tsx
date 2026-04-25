@@ -31,12 +31,12 @@ const orderSteps: OrderStep[] = [
   },
   {
     number: "2",
-    title: "Pick Up",
-    description: "Kurir profesional kami akan menjemput sepatu ke lokasi Anda.",
-    duration: "Tergantung lokasi (max 24 jam)",
+    title: "Drop Off",
+    description: "Kirim atau bawa sepatu Anda ke outlet kami.",
+    duration: "Sesuai jam operasional",
     details: [
-      "Gratis ongkir untuk area tertentu",
-      "Sepatu dikemas dengan aman",
+      "Lokasi strategis dan mudah dijangkau",
+      "Sepatu dikemas dan didata dengan aman",
       "Kembalian uang jika tidak puas dengan hasil",
     ],
   },
@@ -53,8 +53,8 @@ const orderSteps: OrderStep[] = [
   },
   {
     number: "4",
-    title: "Delivery & Payment",
-    description: "Sepatu diantar kembali fresh dan siap pakai.",
+    title: "Payment & Collection",
+    description: "Sepatu selesai dibersihkan, fresh dan siap Anda ambil.",
     duration: "Hari yang dijanjikan",
     details: [
       "Garansi hasil atau uang kembali 100%",
@@ -76,9 +76,9 @@ const faqs: FAQ[] = [
       "Ya! Kami memberikan garansi kepuasan 100% atau uang kembali. Tidak ada risiko sama sekali.",
   },
   {
-    question: "Apakah di semua area atau hanya area tertentu?",
+    question: "Dimana lokasi outlet Brocleanx?",
     answer:
-      "Kami melayani Jakarta dan sekitarnya. Tanyakan ke admin apakah area Anda tercover.",
+      "Outlet kami berlokasi di pusat kota. Hubungi admin via WA untuk panduan arah dan jam buka.",
   },
   {
     question: "Sepatu yang jenis apa saja bisa dibersihkan?",
@@ -201,10 +201,10 @@ export default function HowToOrderSection() {
         <div className="mt-12 flex justify-center sm:mt-16 md:mt-20">
           <Button
             asChild
-            className="h-12 rounded-lg bg-[#25D366] px-6 text-sm font-extrabold text-[#052016] shadow-[0_10px_35px_rgba(37,211,102,0.35)] transition-all duration-300 hover:bg-[#1fbd5a] hover:shadow-[0_12px_38px_rgba(37,211,102,0.42)] hover:scale-105 sm:h-14 sm:rounded-xl sm:px-8 sm:text-base"
+            className="h-12 px-6 sm:h-14 sm:px-8 sm:text-base"
           >
             <Link
-              href="https://wa.me/6281234567890?text=Halo%20admin%2C%20saya%20mau%20order%20cleaning%20sepatu."
+              href="https://wa.me/6289613729647?text=Halo%20admin%2C%20saya%20mau%20order%20cleaning%20sepatu."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"

@@ -13,7 +13,7 @@ export default function HeroSection() {
           style={{
             backgroundColor: "#001F16",
             backgroundImage:
-              "linear-gradient(140deg, rgba(3, 15, 12, 0.25), rgba(4, 28, 22, 0.55)), url('/assets/left-hero.jpg')",
+              "linear-gradient(140deg, rgba(3, 15, 12, 0.2), rgba(4, 28, 22, 0.25)), url('/assets/left-hero.jpg')",
             backgroundPosition: "center 38%",
           }}
         >
@@ -24,7 +24,7 @@ export default function HeroSection() {
           style={{
             backgroundColor: "#00110C",
             backgroundImage:
-              "linear-gradient(145deg, rgba(3, 15, 12, 0.2), rgba(8, 30, 20, 0.52)), url('/assets/right-hero.jpg')",
+              "linear-gradient(145deg, rgba(3, 15, 12, 0.2), rgba(8, 30, 20, 0.25)), url('/assets/right-hero.jpg')",
             backgroundPosition: "center 35%",
           }}
         >
@@ -33,9 +33,9 @@ export default function HeroSection() {
       </div>
 
       {/* Layer gelap supaya teks tetap terbaca */}
-      <div className="absolute inset-0 bg-[#030F0F]/60" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#030F0F]/30 via-[#030F0F]/10 to-[#030F0F]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.28)_62%,_rgba(0,0,0,0.55)_100%)]" />
+      <div className="absolute inset-0 bg-[#030F0F]/20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#030F0F]/10 via-[#030F0F]/5 to-[#030F0F]/90" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.1)_62%,_rgba(0,0,0,0.4)_100%)]" />
 
       <div className="relative mx-auto box-border flex min-h-screen max-w-6xl items-center justify-center px-4 pb-14 pt-[9.5rem] text-center sm:pt-[10rem] md:px-8 md:pt-[8.25rem] lg:pb-16">
         <div className="max-w-4xl">
@@ -61,7 +61,7 @@ export default function HeroSection() {
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-gray-300 sm:gap-4 sm:text-xs">
             <span className="rounded-md border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm">
-              Pickup available
+              Drop-off available
             </span>
             <span className="rounded-md border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm">
               Safe for premium materials

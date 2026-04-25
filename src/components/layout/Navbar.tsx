@@ -27,7 +27,7 @@ interface IndexedSearchItem extends SearchItem {
 
 const navItems: NavItem[] = [
   { label: "Service", href: "/#service" },
-  { label: "About", href: "/#about" },
+  { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
 ];
 
@@ -41,8 +41,8 @@ const searchItems: SearchItem[] = [
   {
     title: "About",
     description: "Kenapa trust Brocleanx untuk perawatan sepatu.",
-    href: "/#about",
-    keywords: ["about", "tentang", "why trust", "pickup"],
+    href: "/about",
+    keywords: ["about", "tentang", "why trust", "drop off"],
   },
   {
     title: "Blog",
@@ -361,7 +361,12 @@ export default function Navbar() {
                 ) : null}
               </div>
 
-              <IconLink href="#location" label="Location">
+              <IconLink 
+                href="https://www.google.com/maps/place/Yogyakarta" 
+                label="Location Yogyakarta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -377,7 +382,6 @@ export default function Navbar() {
 
             <Button
               asChild
-              variant="secondary"
               size="sm"
               className="hidden md:inline-flex"
             >
@@ -395,7 +399,6 @@ export default function Navbar() {
               {pathname !== "/" && (
                 <Button
                   asChild
-                  variant="secondary"
                   size="sm"
                   className="w-full"
                 >
@@ -417,7 +420,6 @@ export default function Navbar() {
 
               <Button
                 asChild
-                variant="secondary"
                 size="sm"
                 className="mt-1 w-full"
               >
