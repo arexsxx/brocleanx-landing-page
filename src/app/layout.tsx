@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
@@ -10,6 +10,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export const metadata: Metadata = {
   title: "Brocleanx | Premium Shoe Care Yogyakarta",
@@ -51,7 +58,7 @@ export default function RootLayout({
       <body>
         <Navbar />
 
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen w-full overflow-x-hidden flex flex-col">{children}</main>
 
         <Footer />
       </body>
