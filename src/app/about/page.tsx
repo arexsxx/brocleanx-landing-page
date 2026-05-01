@@ -22,7 +22,7 @@ export default function AboutPage() {
       <section className="relative px-6 py-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 order-2 lg:order-1">
               <SectionHeading 
                 title="WE REVIVE YOUR KICKS" 
                 eyebrow="ABOUT BROCLEANX" 
@@ -40,11 +40,12 @@ export default function AboutPage() {
                 </Button>
               </div>
             </div>
-            <div className="relative h-[400px] lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+            <div className="relative h-[400px] lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 group order-1 lg:order-2">
               <Image 
                 src="/assets/card-3.jpg" 
                 alt="Brocleanx Cleaning Process" 
                 fill 
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#001F16] via-[#001F16]/20 to-transparent"></div>
@@ -71,11 +72,12 @@ export default function AboutPage() {
       <section className="relative px-6 py-20 sm:px-8 lg:px-12 mt-12">
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-12 lg:grid-cols-12 items-center">
-            <div className="lg:col-span-5 relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-[#ffde00]/20 order-2 lg:order-1 group">
+            <div className="lg:col-span-5 relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-[#ffde00]/20 group">
                <Image 
                 src="/assets/card-2.jpg" 
                 alt="Detail oriented cleaning" 
                 fill 
+                sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105" 
               />
                <div className="absolute inset-0 bg-gradient-to-t from-[#001F16] via-[#001F16]/20 to-transparent pointer-events-none"></div>
@@ -86,7 +88,7 @@ export default function AboutPage() {
                </div>
             </div>
             
-            <div className="lg:col-span-7 flex flex-col gap-6 lg:pl-10 order-1 lg:order-2">
+            <div className="lg:col-span-7 flex flex-col gap-6 lg:pl-10">
               <SectionHeading 
                 title="THE BROCLEANX PROMISE" 
                 eyebrow="OUR MISSION" 

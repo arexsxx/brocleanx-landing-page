@@ -37,7 +37,7 @@ const orderSteps: OrderStep[] = [
     details: [
       "Lokasi strategis dan mudah dijangkau",
       "Sepatu dikemas dan didata dengan aman",
-      "Kembalian uang jika tidak puas dengan hasil",
+      "Pengecekan kondisi sepatu secara detail",
     ],
   },
   {
@@ -57,35 +57,13 @@ const orderSteps: OrderStep[] = [
     description: "Sepatu selesai dibersihkan, fresh dan siap Anda ambil.",
     duration: "Hari yang dijanjikan",
     details: [
-      "Garansi hasil atau uang kembali 100%",
+      "Hasil bersih, wangi, dan rapi maksimal",
       "Metode pembayaran: Cash/Transfer/E-wallet",
       "Bonus care kit untuk setiap pembelian",
     ],
   },
 ];
 
-const faqs: FAQ[] = [
-  {
-    question: "Berapa response time admin?",
-    answer:
-      "Admin kami siap 24/7. Respons pertama dijamin dalam 1 jam, bahkan di malam hari.",
-  },
-  {
-    question: "Apakah ada garansi hasil?",
-    answer:
-      "Ya! Kami memberikan garansi kepuasan 100% atau uang kembali. Tidak ada risiko sama sekali.",
-  },
-  {
-    question: "Dimana lokasi outlet Brocleanx?",
-    answer:
-      "Outlet kami berlokasi di pusat kota. Hubungi admin via WA untuk panduan arah dan jam buka.",
-  },
-  {
-    question: "Sepatu yang jenis apa saja bisa dibersihkan?",
-    answer:
-      "Semua jenis sepatu bisa dibersihkan: Sneaker, formal, olahraga, canvas, leather, suede, dll.",
-  },
-];
 
 export default function HowToOrderSection() {
   return (
@@ -124,17 +102,17 @@ export default function HowToOrderSection() {
           <div className="hidden h-px w-px bg-white/20 sm:block" />
           <div className="flex-1 text-center sm:flex-none">
             <p className="text-xs font-extrabold text-white sm:text-sm">
-              Garansi 100%
+              Premium Treatment
             </p>
-            <p className="text-[10px] text-white/80 sm:text-xs">Uang Kembali</p>
+            <p className="text-[10px] text-white/80 sm:text-xs">Sesuai Material</p>
           </div>
           <div className="hidden h-px w-px bg-white/20 sm:block" />
           <div className="flex-1 text-center sm:flex-none">
             <p className="text-xs font-extrabold text-white sm:text-sm">
-              Gratis Ongkir
+              Free Pick Up & Delivery
             </p>
             <p className="text-[10px] text-white/80 sm:text-xs">
-              Area Tertentu
+              Untuk radius tertentu
             </p>
           </div>
         </div>
@@ -218,27 +196,6 @@ export default function HowToOrderSection() {
           </Button>
         </div>
 
-        {/* FAQ Section */}
-        <div className="mt-16 sm:mt-20 md:mt-24">
-          <h3 className="mb-6 text-center text-xl font-black uppercase text-white sm:mb-8 sm:text-2xl md:text-3xl">
-            Pertanyaan Umum
-          </h3>
-          <div className="grid gap-3 sm:gap-4 md:gap-6 lg:grid-cols-2">
-            {faqs.map((faq, idx) => (
-              <div
-                key={idx}
-                className="rounded-lg border border-white/10 bg-white/[0.04] p-4 backdrop-blur-[1px] transition-all hover:border-white/20 hover:bg-white/[0.06] sm:p-5 md:p-6"
-              >
-                <h4 className="mb-2 text-sm font-extrabold text-white sm:mb-3 sm:text-base md:text-lg">
-                  ❓ {faq.question}
-                </h4>
-                <p className="text-xs leading-5 text-[#d6e8e3] sm:text-sm sm:leading-6 md:text-base">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

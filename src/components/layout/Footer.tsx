@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="w-full border-t border-[#0a2e22] bg-[#001F16] px-6 pb-8 pt-14 text-sm text-gray-300 sm:px-8 md:px-12 md:pt-16">
       <div className="container mx-auto max-w-6xl">
-        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-4 lg:gap-12">
+        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-12">
           {/* Kolom 1: Logo & Deskripsi */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3 mb-2">
@@ -80,37 +80,6 @@ export default function Footer() {
             <div className="border-b border-gray-800 pb-2">
               Whatsapp : +62 896 1372 9647
             </div>
-          </div>
-
-          {/* Kolom 4: Resources */}
-          <div className="flex flex-col gap-4">
-            <h4 className="text-white font-bold mb-2 tracking-wider">
-              RESOURCES
-            </h4>
-            <Link
-              href="#"
-              className="hover:text-white transition-colors border-b border-gray-800 pb-2"
-            >
-              Support Area
-            </Link>
-            <Link
-              href="#"
-              className="hover:text-white transition-colors border-b border-gray-800 pb-2"
-            >
-              Documentations
-            </Link>
-            <Link
-              href="/how-to-order"
-              className="hover:text-white transition-colors border-b border-gray-800 pb-2"
-            >
-              How to Buy
-            </Link>
-            <Link
-              href=""
-              className="hover:text-white transition-colors border-b border-gray-800 pb-2"
-            >
-              Terms Of Policy
-            </Link>
           </div>
         </div>
 

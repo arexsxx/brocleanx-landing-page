@@ -16,7 +16,7 @@ interface FeatureCard {
 
 const featureCards: FeatureCard[] = [
   {
-    title: "/ PREMIUM TREATMENT",
+    title: "PREMIUM TREATMENT",
     description:
       "Formula khusus aman untuk suede, canvas, dan leather premium.",
     iconSrc: "/assets/premium.svg",
@@ -24,7 +24,7 @@ const featureCards: FeatureCard[] = [
     bgImage: "url('/assets/card-3.jpg')",
   },
   {
-    title: "/ DETAIL - ORIENTED",
+    title: "DETAIL - ORIENTED",
     description:
       "Pembersihan presisi hingga sela-sela midsole dan jahitan terdalam.",
     iconSrc: "/assets/detail.svg",
@@ -111,7 +111,7 @@ export default function WhyTrustUsSection() {
 
               <div className="relative z-10 w-full rounded-lg bg-white/45 px-3 py-2 text-left backdrop-blur-[1px]">
                 <CardTitle className="text-xl font-extrabold uppercase leading-tight tracking-tight text-black sm:text-2xl md:text-[1.8rem]">
-                  / EASY DROP - OFF
+                  EASY DROP - OFF
                 </CardTitle>
               </div>
 
@@ -130,7 +130,7 @@ export default function WhyTrustUsSection() {
                   Cukup chat WA, bawa sepatu Anda ke outlet kami, dan kami siap memprosesnya.
                 </CardDescription>
                 <Button asChild>
-                  <Link href="/how-to-order">Order sekarang</Link>
+                  <Link href="how-to-order">Order sekarang</Link>
                 </Button>
               </div>
             </Card>

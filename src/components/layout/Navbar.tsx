@@ -197,7 +197,7 @@ export default function Navbar() {
   return (
     <>
       <div className="fixed left-0 right-0 top-0 z-50 h-9 overflow-hidden border-b border-white/5 bg-gray-950">
-        <Marquee message="Gapapa malas nyuci, biar kami yang beraksi." />
+        <Marquee message="Gapapa malas nyuci, biar kami yang atasi" />
       </div>
 
       <header
@@ -245,29 +245,13 @@ export default function Navbar() {
               aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-              className="order-last md:order-none inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 md:hidden"
+              className="order-last md:order-none flex h-10 w-10 items-center justify-center text-white md:hidden"
             >
-              {isMobileMenuOpen ? (
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="h-5 w-5"
-                >
-                  <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
-                </svg>
-              ) : (
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="h-5 w-5"
-                >
-                  <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
-                </svg>
-              )}
+              <div className="flex flex-col justify-between w-6 h-[16px]">
+                <span className={`block h-[2px] w-full bg-current rounded-full transition-all duration-300 ease-in-out origin-center ${isMobileMenuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
+                <span className={`block h-[2px] w-full bg-current rounded-full transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'opacity-0 translate-x-4' : ''}`} />
+                <span className={`block h-[2px] w-full bg-current rounded-full transition-all duration-300 ease-in-out origin-center ${isMobileMenuOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
+              </div>
             </button>
 
             <div className="flex items-center gap-2">
@@ -393,47 +377,82 @@ export default function Navbar() {
           </div>
         </div>
 
-        {isMobileMenuOpen ? (
-          <div className="border-t border-white/10 px-3 pb-3 pt-2 md:hidden">
-            <nav className="flex flex-col gap-2 text-sm font-semibold text-gray-200">
+      </header>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+          isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <div 
+          className={`flex h-full flex-col px-4 pt-10 sm:px-6 transition-transform duration-300 ${
+            isMobileMenuOpen ? "translate-y-0" : "-translate-y-4"
+          }`}
+        >
+          <div className="flex h-16 items-center justify-between rounded-2xl border border-[#0a2e22]/80 bg-[#030F0F]/95 px-6 shadow-[0_8px_30px_rgba(0,0,0,0.4)] backdrop-blur-md">
+            <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+              <Image
+                src="/assets/logo2.png"
+                alt="Brocleanx icon"
+                className="h-10 w-auto object-contain"
+                width={140}
+                height={40}
+              />
+            </Link>
+            <button
+              type="button"
+              aria-label="Close menu"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="flex h-10 w-10 items-center justify-end text-gray-400 transition-colors hover:text-white"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div className="mt-3 flex flex-col rounded-2xl border border-[#0a2e22]/80 bg-[#030F0F]/95 p-3 shadow-[0_8px_30px_rgba(0,0,0,0.4)] backdrop-blur-md">
+            <nav className="flex flex-col text-base font-medium text-gray-300">
               {pathname !== "/" && (
-                <Button
-                  asChild
-                  size="sm"
-                  className="w-full"
+                <button
+                  onClick={() => {
+                    router.push("/");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="rounded-2xl px-5 py-4 text-left transition-colors hover:bg-white/5 hover:text-white"
                 >
-                  <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-                    🏠 Home
-                  </Link>
-                </Button>
+                  Home
+                </button>
               )}
 
               {navItems.map((item) => (
                 <button
                   key={`mobile-${item.label}`}
                   onClick={() => handleNavClick(item.href)}
-                  className="rounded-md border border-white/10 bg-white/5 px-3 py-2 text-left transition-colors hover:bg-white/10"
+                  className="rounded-2xl px-5 py-4 text-left transition-colors hover:bg-white/5 hover:text-white"
                 >
                   {item.label}
                 </button>
               ))}
 
-              <Button
-                asChild
-                size="sm"
-                className="mt-1 w-full"
-              >
-                <Link
-                  href="/how-to-order"
-                  onClick={() => setIsMobileMenuOpen(false)}
+              <div className="mt-2 border-t border-white/5 px-2 pt-3 pb-1">
+                <Button
+                  asChild
+                  className="w-full rounded-xl bg-white text-[#030F0F] hover:bg-gray-200"
                 >
-                  How to Order?
-                </Link>
-              </Button>
+                  <Link
+                    href="/how-to-order"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    How to Order?
+                  </Link>
+                </Button>
+              </div>
             </nav>
           </div>
-        ) : null}
-      </header>
+        </div>
+      </div>
     </>
   );
 }

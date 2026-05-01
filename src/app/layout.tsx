@@ -1,13 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Archivo_Black } from "next/font/google";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import SplashScreen from "../components/ui/SplashScreen";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-plus-jakarta-sans",
+  display: "swap",
+});
+
+const archivoBlack = Archivo_Black({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-archivo-black",
   display: "swap",
 });
 
@@ -54,13 +62,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`scroll-smooth ${plusJakartaSans.variable}`}>
-      <body>
-        <Navbar />
+    <html lang="id" className={`scroll-smooth ${plusJakartaSans.variable} ${archivoBlack.variable}`} data-scroll-behavior="smooth" suppressHydrationWarning>
+      <body suppressHydrationWarning>
+        <div id="app-root" className="flex min-h-screen flex-col relative">
+          <SplashScreen />
+          <Navbar />
 
-        <main className="min-h-screen w-full overflow-x-hidden flex flex-col">{children}</main>
+          <main className="flex-1 w-full overflow-x-hidden flex flex-col">{children}</main>
 
-        <Footer />
+          <Footer />
+        </div>
       </body>
     </html>
   );
