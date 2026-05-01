@@ -10,9 +10,9 @@ export const metadata = {
 };
 
 const stats = [
-  { label: "Sepatu Dibersihkan", value: "10,000+" },
-  { label: "Pelanggan Puas", value: "5,000+" },
-  { label: "Tahun Pengalaman", value: "3+" },
+  { label: "Sepatu Dibersihkan", value: "5.000+" },
+  { label: "Pelanggan Puas", value: "4.900+" },
+  { label: "Tahun Pengalaman", value: "2+" },
 ];
 
 export default function AboutPage() {

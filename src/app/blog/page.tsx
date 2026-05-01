@@ -3,63 +3,63 @@ import Image from "next/image";
 const blogPosts = [
   {
     id: 1,
-    title: "Cara Membersihkan Sneakers Putih Tanpa Merusak Material",
+    title: "Cara Membersihkan Sneakers Putih Agar Tetap Kinclong",
     excerpt:
       "Panduan simpel untuk menghilangkan noda kuning, menjaga warna tetap cerah, dan memperpanjang umur sneakers putih harian.",
     imageUrl:
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop",
-    source: "Hypebeast",
-    externalUrl: "https://hypebeast.com/tags/sneakers",
+    source: "807 Garage",
+    externalUrl: "https://807garage.com/blog/cara-membersihkan-sneakers-putih-agar-tetap-kinclong",
   },
   {
     id: 2,
-    title: "Tips Menyimpan Sepatu Agar Tidak Jamuran Saat Musim Hujan",
+    title: "Tips Merawat Sepatu Saat Jarang Dipakai Agar Awet",
     excerpt:
       "Kebiasaan kecil yang sering terlewat ternyata berpengaruh besar untuk mencegah bau, jamur, dan kerusakan bentuk sepatu.",
     imageUrl:
       "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=1200&auto=format&fit=crop",
-    source: "Kompas",
-    externalUrl: "https://www.kompas.com/tag/sepatu",
+    source: "Rukita",
+    externalUrl: "https://www.rukita.co/stories/tips-merawat-sepatu-jarang-dipakai",
   },
   {
     id: 3,
-    title: "Perbedaan Perawatan Sepatu Kulit, Suede, dan Mesh",
+    title: "Cara Merawat Kulit Suede dan Nubuck Agar Tidak Cepat Rusak",
     excerpt:
       "Setiap material punya karakter unik. Artikel ini membahas produk dan teknik yang tepat agar hasil cleaning tetap aman.",
     imageUrl:
       "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=1200&auto=format&fit=crop",
-    source: "GQ",
-    externalUrl: "https://www.gq.com/style",
+    source: "Voila Leather",
+    externalUrl: "https://www.voilaleather.com/cara-merawat-kulit-suede-nubuck",
   },
   {
     id: 4,
-    title: "Menghilangkan Bau Sepatu Dengan Metode Rumahan",
+    title: "8 Cara Menghilangkan Bau Sepatu yang Mudah dan Efektif",
     excerpt:
       "Mulai dari baking soda sampai rotasi pemakaian, ini langkah praktis yang bisa langsung dicoba di rumah.",
     imageUrl:
       "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=1200&auto=format&fit=crop",
-    source: "Detik",
-    externalUrl: "https://www.detik.com/tag/tips",
+    source: "Alodokter",
+    externalUrl: "https://www.alodokter.com/8-cara-menghilangkan-bau-sepatu-yang-mudah-dan-efektif",
   },
   {
     id: 5,
-    title: "Kapan Waktu yang Tepat untuk Cuci Sepatu ke Profesional",
+    title: "Seberapa Sering Sepatu Harus Dicuci?",
     excerpt:
       "Tidak semua noda bisa ditangani sendiri. Pelajari tanda-tanda kapan sepatu sebaiknya masuk treatment profesional.",
     imageUrl:
       "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1200&auto=format&fit=crop",
-    source: "Esquire",
-    externalUrl: "https://www.esquire.com/style/mens-fashion/",
+    source: "Shoes and Care",
+    externalUrl: "https://shoesandcare.com/blog/seberapa-sering-sepatu-harus-dicuci",
   },
   {
     id: 6,
-    title: "Kesalahan Umum Saat Menjemur Sepatu Setelah Dicuci",
+    title: "Cara Menjemur Sepatu Putih Agar Tidak Kuning",
     excerpt:
       "Menjemur di tempat yang salah dapat merusak lem dan membuat warna cepat pudar. Ini cara aman menjemur sepatu.",
     imageUrl:
       "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?q=80&w=1200&auto=format&fit=crop",
-    source: "Tempo",
-    externalUrl: "https://www.tempo.co/tag/gaya-hidup",
+    source: "Rumah123",
+    externalUrl: "https://artikel.rumah123.com/cara-menjemur-sepatu-putih-agar-tidak-kuning",
   },
 ];
 
