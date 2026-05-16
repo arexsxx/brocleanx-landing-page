@@ -232,7 +232,8 @@ export default function Navbar() {
             <Image
               src="/assets/logo2.png"
               alt="Brocleanx icon"
-              className="h-12 w-auto object-contain sm:h-16 md:h-20"
+              className="h-12 object-contain sm:h-16 md:h-20"
+              style={{ width: "auto" }}
               width={160}
               height={80}
               priority
@@ -395,7 +396,8 @@ export default function Navbar() {
               <Image
                 src="/assets/logo2.png"
                 alt="Brocleanx icon"
-                className="h-10 w-auto object-contain"
+                className="h-10 object-contain"
+                style={{ width: "auto" }}
                 width={140}
                 height={40}
               />

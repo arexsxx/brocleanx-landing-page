@@ -55,7 +55,8 @@ export default function PricingSection() {
             alt="Decorative brush"
             width={280}
             height={110}
-            className="h-auto w-[240px] object-contain"
+            className="w-[240px] object-contain"
+            style={{ height: "auto" }}
           />
         </div>
 
@@ -65,7 +66,8 @@ export default function PricingSection() {
             alt="Decorative brush"
             width={260}
             height={110}
-            className="h-auto w-[210px] object-contain"
+            className="w-[210px] object-contain"
+            style={{ height: "auto" }}
           />
         </div>
 
@@ -101,7 +103,8 @@ export default function PricingSection() {
               alt="Brocleanx watermark"
               width={280}
               height={280}
-              className="h-auto w-[260px] object-contain"
+              className="w-[260px] object-contain"
+              style={{ height: "auto" }}
             />
           </div>
 

@@ -43,7 +43,8 @@ export default function SplashScreen() {
             alt="Loading Brocleanx..."
             width={240}
             height={240}
-            className="h-28 w-auto object-contain sm:h-36"
+            className="h-28 object-contain sm:h-36"
+            style={{ width: "auto" }}
             priority
           />
         </div>

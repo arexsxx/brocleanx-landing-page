@@ -20,7 +20,8 @@ export default function Footer() {
                 alt="Brocleanx logo"
                 width={56}
                 height={56}
-                className="h-12 w-auto object-contain"
+                className="h-12 object-contain"
+                style={{ width: "auto" }}
               />
               <span className="text-white font-black tracking-widest text-xl">
                 BROCLEANX
