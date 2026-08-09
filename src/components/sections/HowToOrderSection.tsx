@@ -182,7 +182,7 @@ export default function HowToOrderSection() {
             className="h-12 px-6 sm:h-14 sm:px-8 sm:text-base"
           >
             <Link
-              href="https://wa.me/6289613729647?text=Halo%20admin%2C%20saya%20mau%20order%20cleaning%20sepatu."
+              href="https://wa.me/6289510317935?text=Halo%20admin%2C%20saya%20mau%20order%20cleaning%20sepatu."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
